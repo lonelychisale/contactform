@@ -22,7 +22,7 @@ public function sendEmail(Request $request)
     
     Mail::to("cis-003-18@must.ac.mw")->send($mailable);
 
-    //return view('emails.contact-form', compact('message', 'subject'));
+    
 
      return response()->json(['message' => 'Email sent successfully'], 200);
 }
